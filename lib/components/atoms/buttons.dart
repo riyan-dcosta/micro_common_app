@@ -21,21 +21,24 @@ class MaElevatedButton extends StatelessWidget {
   }
 }
 
-class MaFlatButton extends StatelessWidget {
-  const MaFlatButton({
-    required this.onPressed,
-    required this.child,
-    super.key,
-  });
-
-  final VoidCallback? onPressed;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-        style: const ButtonStyle(elevation: MaterialStatePropertyAll(0)),
-        onPressed: onPressed,
-        child: child);
-  }
-}
+// class MaFlatButton extends MaCustom {
+//   const MaFlatButton({
+//     super.key,
+//     required this.onPressed,
+//     // required this.child,
+//     required super.child,
+//   });
+//
+//   final VoidCallback? onPressed;
+//
+//   @override
+//   final Widget child;
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return ElevatedButton(
+//         style: const ButtonStyle(elevation: MaterialStatePropertyAll(0)),
+//         onPressed: onPressed,
+//         child: child);
+//   }
+// }
